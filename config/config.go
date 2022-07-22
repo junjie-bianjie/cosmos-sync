@@ -42,9 +42,8 @@ type (
 		Bech32AccPrefix   string `mapstructure:"bech32_acc_prefix"`
 		PromethousPort    string `mapstructure:"promethous_port"`
 		OnlySupportModule string `mapstructure:"only_support_module"`
+		SyncTaskTimeout   int64  `mapstructure:"sync_task_timeout"`
 		IsJsonRpcProtocol bool   `mapstructure:"is_json_rpc_protocol"`
-
-		InsertBatchLimit int `mapstructure:"insert_batch_limit"`
 	}
 )
 
